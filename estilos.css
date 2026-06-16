@@ -110,3 +110,21 @@ main section {
 .cartao-verso {
     transform: rotateY(180deg); /* O verso começa escondido */
 }
+
+
+/* Adiciona o cursor de lupa ao passar por cima da imagem */
+.imagem-link {
+    cursor: zoom-in;
+    display: block;
+    overflow: hidden;
+}
+
+/* Efeito de zoom/lupa ao passar o mouse */
+.imagem-link img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.imagem-link:hover img {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+}
