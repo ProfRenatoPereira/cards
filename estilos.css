@@ -110,3 +110,21 @@ main section {
 .cartao-verso {
     transform: rotateY(180deg); /* O verso começa escondido */
 }
+
+
+    /* Permite que as imagens preencham a tela cheia ao clicar */
+    .zoom-imagem {
+        cursor: zoom-in;
+        display: block;
+        overflow: hidden;
+    }
+
+    /* Efeito de Lupa: A imagem aumenta suavemente dentro da caixa */
+    .cartao-imagem {
+        transition: transform 0.3s ease;
+    }
+
+    .zoom-imagem:hover .cartao-imagem {
+        transform: scale(1.2); /* Zoom de 20% ao passar o mouse */
+    }
+
